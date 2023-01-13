@@ -271,22 +271,3 @@ class Portfolio:
         axes[1].legend(loc="upper right", prop={'family': "Times New Roman"}, fontsize=9)
 
         plt.show()
-
-
-def main(filepath):
-    ## Read File
-    df_stock = pd.read_csv(filepath)
-    print(f"File read in {filepath}")
-    # or df_return=pd.read_csv(filepath)
-
-    portfolio = Portfolio()
-    portfolio.addStocks(df_stock, type='price')
-    print("Data added")
-    # or: portfolio.addStocks(df_return)
-
-    portfolio.setInterest(0.01)
-    portfolio.plot()
-
-
-filepath = "Files/StockData.csv"
-main(filepath)
