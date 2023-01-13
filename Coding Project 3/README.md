@@ -1,0 +1,4 @@
+# Coding Project 3: Pattern Detection
+In this project, I establish a model to detect a pattern, such as a face or a logo. Inspired by the lecture of the *Deep Learning* course, I first defined a `ResBlock` class, and constructed several blocks into a `ResNet` model, which I referred to https://blog.csdn.net/weixin_41544329/article/details/103302494. You can specify the parameters, changing it into ResNet18 or ResNet34. Then I customized a `PatternDetection` class for pattern detection. 
+
+However, as the ResNet model has millions of parameters, which requires considerable computing power of the computer, the training process of the model cannot be completed on my personal computer. Therefore, I did not train the model or show the final prediction results. But I still want to show my ideas in this pattern detection project, so I include it as my third coding project.
